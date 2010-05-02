@@ -1,0 +1,33 @@
+<!--
+  Copyright 2010 Orangatame LLC.
+
+  This file is part of GravatarComponent.
+
+  GravatarComponent is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  GravatarComponent is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU General Public License
+  along with GravatarComponent.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<apex:component controller="GravatarComponentController" >
+  <apex:attribute name="emailAddress" 
+		  type="String" 
+		  assignTo="{!emailAddress}" 
+		  required="true" 
+		  description="The email address" />
+  <apex:attribute name="size"
+		  type="Integer"
+		  assignTo="{!size}"
+		  required="false"
+		  default="80"
+		  description="The size of the image (square)"/>
+  <apex:image url="{!gravatarImageUrl}" width="{!size}" height="{!size}"/>
+</apex:component>
