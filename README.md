@@ -19,5 +19,5 @@ How to Install:
 How to use it:
 -----------
 
-    <c:GravatarComponent emailAddress="email@company.com" size="80"/>
+    <c:GravatarImage emailAddress="email@company.com" size="80"/>
 
